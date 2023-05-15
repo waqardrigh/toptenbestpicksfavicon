@@ -1,14 +1,14 @@
 {
-    "name": "Top ten best picks",
-    "short_name": "Top ten best picks",
+    "name": "Top Ten Best Picks",
+    "short_name": "Top Ten Best Picks",
     "icons": [
         {
-            "src": "https://cdn.statically.io/gh/toptenbestpicksfavicon/favicon/main/android-chrome-192x192.png",
+            "src": "https://cdn.statically.io/gh/waqardrigh/toptenbestpicksfavicon/main/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://cdn.statically.io/gh/toptenbestpicksfavicon/favicon/main/android-chrome-512x512.png",
+            "src": "https://cdn.statically.io/gh/waqardrigh/toptenbestpicksfavicon/main/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
