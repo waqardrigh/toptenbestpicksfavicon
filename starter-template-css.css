@@ -32,30 +32,30 @@ Author Url:   https://waqardrigh.com/
 <Group description="Theme Colors">
     <Variable name="main.color" description="Theme Color" type="color" default="#1E73BE" value="#1E73BE"/>
     <Variable name="title.color" description="Title Color" type="color" default="#111111" value="#111111"/>
-    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="$(main.color)" value="#1E73BE"/>
+    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
     <Variable name="meta.color" description="Meta Color" type="color" default="#595959" value="#595959"/>
     <Variable name="text.color" description="Text Color" type="color" default="#111111"  value="#111111"/>
 </Group>
 <Group description="Site Header" selector="#header-wrapper">
     <Variable name="header.bg" description="Header Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="header.color" description="Header Color" type="color" default="$(title.color)" value="#111111"/>
-    <Variable name="header.hover.color" description="Header Hover Color" type="color" default="$(main.color)" value="#1E73BE"/>
+    <Variable name="header.color" description="Header Color" type="color" default="'#111111'" value="#111111"/>
+    <Variable name="header.hover.color" description="Header Hover Color" type="color" default="'#1E73BE'" value="'#111111'"/>
 </Group>
 <Group description="Sub Menu">
     <Variable name="submenu.bg" description="Sub Menu Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="submenu.color" description="Sub Menu Color" type="color" default="$(title.color)" value="#111111"/>
-    <Variable name="submenu.hover.color" description="Sub Menu Hover Color" type="color" default="$(main.color)" value="#1E73BE"/>
+    <Variable name="submenu.color" description="Sub Menu Color" type="color" default="'#111111'" value="#111111"/>
+    <Variable name="submenu.hover.color" description="Sub Menu Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
 </Group>
 <Group description="Mega Menu">
-    <Variable name="mega.bg" description="Mega Menu Background" type="color" default="$(submenu.bg)" value="#FFFFFF"/>
-    <Variable name="mega.color" description="Mega Menu Color" type="color" default="$(submenu.color)" value="#111111"/>
-    <Variable name="mega.hover.color" description="Mega Menu Hover Color" type="color" default="$(main.color)" value="#1E73BE"/>
+    <Variable name="mega.bg" description="Mega Menu Background" type="color" default="'#FFFFFF'" value="#FFFFFF"/>
+    <Variable name="mega.color" description="Mega Menu Color" type="color" default="'#111111'" value="#111111"/>
+    <Variable name="mega.hover.color" description="Mega Menu Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
     <Variable name="mega.meta.color" description="Mega Meta Color" type="color" default="#898989" value="#898989"/>
 </Group>
 <Group description="Mobile Menu">
     <Variable name="mmenu.bg" description="Mobile Menu Background" type="color" default="$(outer.bg)" value="#FAFAFA"/>
-    <Variable name="mmenu.color" description="Mobile Menu Color" type="color" default="$(title.color)" value="#111111"/>
-    <Variable name="mmenu.hover.color" description="Mobile Menu Hover Color" type="color" default="$(main.color)" value="#1E73BE"/>
+    <Variable name="mmenu.color" description="Mobile Menu Color" type="color" default="'#111111'" value="#111111"/>
+    <Variable name="mmenu.hover.color" description="Mobile Menu Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
 </Group>
 <Group description="Theme Widgets" select="#sidebar">
     <Variable name="widget.bg" description="Widget Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
@@ -71,16 +71,16 @@ Author Url:   https://waqardrigh.com/
 </Group>
 <Group description="Theme Footer" selector="#footer-wrapper">
     <Variable name="footer.bg" description="Footer Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="footer.color" description="Footer Color" type="color" default="$(text.color)" value="#111111"/>
-    <Variable name="footer.hover.color" description="Footer Hover Color" type="color" default="$(main.color)" value="#1E73BE"/>
+    <Variable name="footer.color" description="Footer Color" type="color" default="'#111111'" value="#111111"/>
+    <Variable name="footer.hover.color" description="Footer Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
 </Group>
 <Group description="Footer Bar" selector=".footer-bar">
     <Variable name="footerbar.bg" description="Footer Bar Background" type="color" default="#111111" value="#111111"/>
     <Variable name="footerbar.color" description="Footer Bar Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="footerbar.hover.color" description="Footer Bar Hover Color" type="color" default="$(main.color)" value="#1E73BE"/>
+    <Variable name="footerbar.hover.color" description="Footer Bar Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
 </Group>
 <Group description="Theme Buttons">
-    <Variable name="button.bg" description="Button Background" type="color" default="$(main.color)" value="#1E73BE"/>
+    <Variable name="button.bg" description="Button Background" type="color" default="'#1E73BE'" value="#1E73BE"/>
     <Variable name="button.color" description="Button Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
     <Variable name="button.hover.bg" description="Button Hover Background" type="color" default="#1B67AB" value="#1B67AB"/>
     <Variable name="button.hover.color" description="Button Hover Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
@@ -112,9 +112,9 @@ Author Url:   https://waqardrigh.com/
     <Variable name="textfont.bolditalic" description="Text Font Bold Italic" type="font" default="italic 700 14px $(text.font.family)" value="italic 700 14px $(family)"/>
 </Group>
 <Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="transparent"  value="transparent"/>
-<Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="$(title.color)" value="#111111"/>
-<Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="$(text.color)"  value="#111111"/>
-<Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)"  value="#1E73BE"/>
+<Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="'#111111'" value="#111111"/>
+<Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="'#111111'"  value="#111111"/>
+<Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="'#1E73BE'"  value="#1E73BE"/>
 <Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 15px raleway, Arial, sans-serif !important"  value="normal 400 15px raleway, Arial, sans-serif !important"/>
 <Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 15px raleway, Arial, sans-serif !important"  value="normal 700 15px raleway, Arial, sans-serif !important"/>
 -- Customize Options (End) --*/
@@ -169,47 +169,47 @@ Author Url:   https://waqardrigh.com/
 
 /*-- CSS Variables --*/
 :root{
---body-font:'$(main.font.family)', Arial, sans-serif;
---menu-font:'$(menu.font.family)', Arial, sans-serif;
---title-font:'$(title.font.family)', Arial, sans-serif;
---text-font:'$(text.font.family)', Arial, sans-serif;
---body-bg-color:$(background.color);
---body-bg:$(body.background);
---outer-bg:$(outer.bg);
---main-color:$(main.color);
---title-color:$(title.color);
---title-hover-color:$(title.hover.color);
---meta-color:$(meta.color);
---text-color:$(text.color);
---header-bg:$(header.bg);
---header-color:$(header.color);
---header-hover-color:$(header.hover.color);
---submenu-bg:$(submenu.bg);
---submenu-color:$(submenu.color);
---submenu-hover-color:$(submenu.hover.color);
---megamenu-bg:$(mega.bg);
---megamenu-color:$(mega.color);
---megamenu-hover-color:$(mega.hover.color);
---megamenu-meta-color:$(mega.meta.color);
---mobilemenu-bg:$(mmenu.bg);
---mobilemenu-header-bg:$(mmenu.bg);
---mobilemenu-color:$(mmenu.color);
---mobilemenu-hover-color:$(mmenu.hover.color);
---widget-bg:$(widget.bg);
---footer-bg:$(footer.bg);
---footer-color:$(footer.color);
---footer-hover-color:$(footer.hover.color);
---footerbar-bg:$(footerbar.bg);
---footerbar-color:$(footerbar.color);
---footerbar-hover-color:$(footerbar.hover.color);
---button-bg:$(button.bg);
---button-color:$(button.color);
---button-hover-bg:$(button.hover.bg);
---button-hover-color:$(button.hover.color);
+--body-font:'Raleway', Arial, sans-serif;
+--menu-font:'Raleway', Arial, sans-serif;
+--title-font:'Raleway', Arial, sans-serif;
+--text-font:'Raleway', Arial, sans-serif;
+--body-bg-color:'#FAFAFA';
+--body-bg:'#FAFAFA';
+--outer-bg:'#FAFAFA';
+--main-color:'#1E73BE';
+--title-color:'#111111';
+--title-hover-color:'#1E73BE';
+--meta-color:'#595959';
+--text-color:'#111111';
+--header-bg:'#FFFFFF';
+--header-color:'#111111';
+--header-hover-color:'#111111';
+--submenu-bg:'#FFFFFF';
+--submenu-color:'#111111';
+--submenu-hover-color:'#1E73BE';
+--megamenu-bg:'#FFFFFF';
+--megamenu-color:'#111111';
+--megamenu-hover-color:'#1E73BE';
+--megamenu-meta-color:'#898989';
+--mobilemenu-bg:'#FAFAFA';
+--mobilemenu-header-bg:'#FAFAFA';
+--mobilemenu-color:'#111111';
+--mobilemenu-hover-color:'#1E73BE';
+--widget-bg:'#FFFFFF';
+--footer-bg:'#FFFFFF';
+--footer-color:'#111111';
+--footer-hover-color:'#1E73BE';
+--footerbar-bg:'#111111';
+--footerbar-color:'#FFFFFF';
+--footerbar-hover-color:'#1E73BE';
+--button-bg:'#1E73BE';
+--button-color:'#FFFFFF';
+--button-hover-bg:'#1B67AB';
+--button-hover-color:'#FFFFFF';
 --gray-bg:rgba(155,155,155,0.05);
 --avatar-shadow:0px 1px 4px rgba(0,0,0,0.05);
---field-focus:0 0 0 2px $(main.color)20;
---btn-focus:0 0 0 2px $(button.bg)20;
+--field-focus:0 0 0 2px '#1E73BE'20;
+--btn-focus:0 0 0 2px '#1E73BE'20;
 --border-color:rgba(155,155,155,0.15);
 --radius:4px;
 --shadow:0 0 10px rgba(0,0,0,0.03);
@@ -232,10 +232,10 @@ body{position:relative;background:var(--body-bg);background-color:var(--body-bg-
 h1,h2,h3,h4,h5,h6{font-family:var(--title-font);font-weight:700}
 a,input,button{transition:all .0s ease}
 #outer-wrapper{position:relative;overflow:hidden;width:100%;max-width:100%;background-color:var(--outer-bg);margin:0 auto;padding:0}
-.is-boxed #outer-wrapper{width:$(row.width + 50px);max-width:100%;box-shadow:0 0 20px rgba(0,0,0,0.1)}
+.is-boxed #outer-wrapper{width: 1020px;max-width:100%;box-shadow:0 0 20px rgba(0,0,0,0.1)}
 .is-dark .is-boxed #outer-wrapper{box-shadow:0 0 20px rgba(0,0,0,0.3)}
 .container{position:relative}
-.row-x1{width:$(row.width);max-width:100%}
+.row-x1{width:970px;max-width:100%}
 .row-x2{width:100%}
 .flex-center{display:flex;justify-content:center}
 .flex-col{display:flex;flex-direction:column}
@@ -244,9 +244,9 @@ a,input,button{transition:all .0s ease}
 .is-left #content-wrapper > .container,.rtl .is-right #content-wrapper > .container{flex-direction:row-reverse}
 .rtl .is-left #content-wrapper > .container{flex-direction:row}
 .theiaStickySidebar:before,.theiaStickySidebar:after{content:'';display:table;clear:both}
-#main-wrapper{position:relative;width:calc(100% - $(sidebar.width + 25px))}
+#main-wrapper{position:relative;width:calc(100% - 325px)}
 .no-sidebar #main-wrapper{width:100%}
-#sidebar-wrapper{position:relative;width:$(sidebar.width)}
+#sidebar-wrapper{position:relative;width:300px}
 .no-sidebar #sidebar-wrapper{display:none}
 .btn{position:relative;border-radius:var(--radius)}
 .entry-image-wrap,.author-avatar-wrap,.comments .avatar-image-container{display:block;position:relative;overflow:hidden;background-color:var(--gray-bg);z-index:5;color:transparent}
@@ -372,7 +372,7 @@ to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}
 .header-inner.is-fixed{position:fixed;top:-70px;left:0;width:100%;z-index:990;backface-visibility:hidden;visibility:hidden;opacity:0;transition:all .25s ease}
 .header-inner.is-fixed.show{top:0;opacity:1;visibility:visible;margin:0}
 .header-inner.is-fixed.show .header-header{box-shadow:0 0 10px rgba(0,0,0,0.1)}
-.is-boxed .header-header{float:none;width:$(row.width + 50px);max-width:100%;margin:0 auto;padding:0}
+.is-boxed .header-header{float:none;width:1020px;max-width:100%;margin:0 auto;padding:0}
 .header-items{position:relative;display:flex;flex-wrap:wrap;justify-content:space-between}
 .flex-left{display:flex;align-items:center;z-index:10}
 .flex-right{position:absolute;top:0;right:0;z-index:20}
@@ -505,7 +505,7 @@ to{opacity:1;transform:translate3d(0,0,0)}
 #breadcrumb a.home,#breadcrumb a:hover{color:var(--main-color)}
 #breadcrumb .separator:after{content:'\e5cc';font-family:'Material Icons Round';font-size:16px;font-weight:400;font-style:normal;vertical-align:middle}
 .rtl #breadcrumb .separator:after{content:'\e5cb'}
-.item-post h1.entry-title{font-size:$(itempost.title.size);font-weight:700;margin:0}
+.item-post h1.entry-title{font-size:35px;font-weight:700;margin:0}
 .item-post .has-meta h1.entry-title{margin-bottom:13px}
 .p-eh .entry-meta{flex-wrap:wrap;justify-content:space-between;font-size:14px;margin:0}
 .p-eh .entry-meta .align-left,.p-eh .entry-meta .align-right{display:flex;flex-wrap:wrap;align-items:center}
@@ -524,7 +524,7 @@ to{opacity:1;transform:translate3d(0,0,0)}
 .entry-meta .entry-comments-link.show{display:flex}
 .entry-content-wrap{margin:25px 0 0}
 .is-page .entry-content-wrap{margin:20px 0 0}
-#post-body{position:relative;float:left;width:100%;font-family:var(--text-font);font-size:$(itempost.content.size);color:var(--text-color);line-height:1.6em;padding:0;margin:0}
+#post-body{position:relative;float:left;width:100%;font-family:var(--text-font);font-size:15px;color:var(--text-color);line-height:1.6em;padding:0;margin:0}
 .post-body p{margin-bottom:25px}
 .post-body h1,.post-body h2,.post-body h3,.post-body h4,.post-body h5,.post-body h6{font-size:17px;color:var(--title-color);line-height:1.3em;margin:0 0 20px}
 .post-body h1{font-size:26px}
@@ -825,14 +825,14 @@ p.comments-message > em{color:#ff3f34;font-style:normal;margin:0 3px}
 #footer-wrapper{position:relative;float:left;width:100%;background-color:var(--footer-bg);color:var(--footer-color);box-shadow:var(--shadow)}
 #starter-free-about-section{flex-wrap:wrap;padding:30px 0}
 .footer-info{flex:1}
-.starter-free-about-section .Image{width:calc(100% - $(sidebar.width + 25px));flex-wrap:wrap;align-items:center}
+.starter-free-about-section .Image{width:calc(100% - 325px );flex-wrap:wrap;align-items:center}
 .starter-free-about-section .footer-logo{padding:0 25px 0 0}
 .rtl .starter-free-about-section .footer-logo{padding:0 0 0 25px}
 .starter-free-about-section .footer-logo img{display:block;width:auto;height:auto;max-height:40px}
 .starter-free-about-section .Image .image-caption{font-size:15px;color:var(--footer-color);margin:0}
 .starter-free-about-section .Image .image-caption a{color:var(--footer-color)}
 .starter-free-about-section .Image .image-caption a:hover{color:var(--footer-hover-color)}
-.starter-free-about-section .LinkList{width:$(sidebar.width);display:flex;align-items:center;justify-content:flex-end;margin:0}
+.starter-free-about-section .LinkList{width:300px;display:flex;align-items:center;justify-content:flex-end;margin:0}
 .starter-free-about-section ul.social-icons{display:flex;flex-wrap:wrap}
 .starter-free-about-section .social-icons li{margin:0 0 0 10px}
 .rtl .starter-free-about-section .social-icons li{margin:0 10px 0 0}
@@ -868,7 +868,7 @@ a.ads-here{display:flex;align-items:center;justify-content:center;height:78px;ba
 .sidebar a.ads-here{height:250px}
 a.ads-here:hover{color:var(--main-color)}
 .entry-content-wrap a.ads-here{background-color:var(--gray-bg);box-shadow:none}
-@media only screen and (max-width: $(row.width + 50px)) {
+@media only screen and (max-width: 1020px) {
 #outer-wrapper,.is-boxed #outer-wrapper,.is-boxed .header-header{width:100%;max-width:100%;margin:0}
 .row-x1{width:100%}
 #header-wrapper .container,#header-ads-wrap .container,#content-wrapper .container,#footer-ads-wrap .container,#footer-wrapper .container{padding:0 20px}
