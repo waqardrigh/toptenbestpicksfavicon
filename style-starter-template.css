@@ -1,215 +1,46 @@
------------------------------------------------
-Blogger Template Style
-Name:         Waqardrigh
-Version:      1.0.0 - Free
-Author:       Waqardrigh
-Author Url:   https://waqardrigh.com/
------------------------------------------------*/
-
-/*-- Customize Options (Start) --
-<Variable name="keycolor" description="Main Color" type="color" default="#1E73BE" value="#1E73BE"/>
-<Group description="Theme Options">
-    <Variable name="boxed" description="Boxed Mode" type="length" default="0px" min="0px" max="1px" value="0px"/>
-    <Variable name="fixedmenu" description="Fixed Menu" type="length" default="1px" min="0px" max="1px" value="1px"/>
-    <Variable name="sidebar" description="Left Sidebar" type="length" default="0px" min="0px" max="1px" value="0px"/>
-    <Variable name="fixedsidebar" description="Fixed Sidebar" type="length" default="1px" min="0px" max="1px" value="1px"/>
-</Group>
-<Group description="Theme Widths">
-    <Variable name="row.width" description="Container Width" type="length" default="970px" min="970px" max="1089px" value="970px"/>
-    <Variable name="sidebar.width" description="Sidebar Width" type="length" default="300px" min="250px" max="336px" value="300px"/>
-</Group>
-<Group description="Theme Fonts">
-    <Variable name="main.font" description="Site Font" type="font" family="Raleway" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
-    <Variable name="menu.font" description="Menu Font" type="font" family="Raleway" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
-    <Variable name="title.font" description="Title Font" type="font" family="Raleway" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
-    <Variable name="text.font" description="Text Font" type="font" family="Raleway" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
-</Group>
-<Group description="Background">
-    <Variable name="background.color" description="Body Background" type="color" default="#FAFAFA"  value="#FAFAFA"/>
-    <Variable name="body.background" description="Background" type="background" color="$(background.color)" default="$(color) none repeat fixed top left" value="$(color) none repeat fixed top left"/>
-    <Variable name="outer.bg" description="Outer Background" type="color" default="#FAFAFA"  value="#FAFAFA"/>
-</Group>
-<Group description="Theme Colors">
-    <Variable name="main.color" description="Theme Color" type="color" default="#1E73BE" value="#1E73BE"/>
-    <Variable name="title.color" description="Title Color" type="color" default="#111111" value="#111111"/>
-    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
-    <Variable name="meta.color" description="Meta Color" type="color" default="#595959" value="#595959"/>
-    <Variable name="text.color" description="Text Color" type="color" default="#111111"  value="#111111"/>
-</Group>
-<Group description="Site Header" selector="#header-wrapper">
-    <Variable name="header.bg" description="Header Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="header.color" description="Header Color" type="color" default="'#111111'" value="#111111"/>
-    <Variable name="header.hover.color" description="Header Hover Color" type="color" default="'#1E73BE'" value="'#111111'"/>
-</Group>
-<Group description="Sub Menu">
-    <Variable name="submenu.bg" description="Sub Menu Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="submenu.color" description="Sub Menu Color" type="color" default="'#111111'" value="#111111"/>
-    <Variable name="submenu.hover.color" description="Sub Menu Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
-</Group>
-<Group description="Mega Menu">
-    <Variable name="mega.bg" description="Mega Menu Background" type="color" default="'#FFFFFF'" value="#FFFFFF"/>
-    <Variable name="mega.color" description="Mega Menu Color" type="color" default="'#111111'" value="#111111"/>
-    <Variable name="mega.hover.color" description="Mega Menu Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
-    <Variable name="mega.meta.color" description="Mega Meta Color" type="color" default="#898989" value="#898989"/>
-</Group>
-<Group description="Mobile Menu">
-    <Variable name="mmenu.bg" description="Mobile Menu Background" type="color" default="$(outer.bg)" value="#FAFAFA"/>
-    <Variable name="mmenu.color" description="Mobile Menu Color" type="color" default="'#111111'" value="#111111"/>
-    <Variable name="mmenu.hover.color" description="Mobile Menu Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
-</Group>
-<Group description="Theme Widgets" select="#sidebar">
-    <Variable name="widget.bg" description="Widget Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-</Group>
-<Group description="Post Styles" select="#main">
-    <Variable name="itempost.title.size" description="Title Font Size" type="length" default="35px" min="20px" max="50px" value="35px"/>
-    <Variable name="itempost.content.size" description="Text Font Size" type="length" default="15px" min="12px" max="20px" value="15px"/>
-</Group>
-<Group description="Post Options" select="#main">
-    <Variable name="breadcrumb" description="Post Breadcrumbs" type="length" default="1px" min="0px" max="1px" value="1px"/>
-    <Variable name="cmm.count" description="Comments Count" type="length" default="1px" min="0px" max="1px" value="1px"/>
-    <Variable name="postnav" description="Post Navigation" type="length" default="1px" min="0px" max="1px" value="1px"/>
-</Group>
-<Group description="Theme Footer" selector="#footer-wrapper">
-    <Variable name="footer.bg" description="Footer Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="footer.color" description="Footer Color" type="color" default="'#111111'" value="#111111"/>
-    <Variable name="footer.hover.color" description="Footer Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
-</Group>
-<Group description="Footer Bar" selector=".footer-bar">
-    <Variable name="footerbar.bg" description="Footer Bar Background" type="color" default="#111111" value="#111111"/>
-    <Variable name="footerbar.color" description="Footer Bar Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="footerbar.hover.color" description="Footer Bar Hover Color" type="color" default="'#1E73BE'" value="#1E73BE"/>
-</Group>
-<Group description="Theme Buttons">
-    <Variable name="button.bg" description="Button Background" type="color" default="'#1E73BE'" value="#1E73BE"/>
-    <Variable name="button.color" description="Button Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="button.hover.bg" description="Button Hover Background" type="color" default="#1B67AB" value="#1B67AB"/>
-    <Variable name="button.hover.color" description="Button Hover Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-</Group>
-<Group description="Theme Fonts (Reset)">
-    <!-- Site Font -->
-    <Variable name="mainfont.italic" description="Main Font Italic" type="font" default="italic 400 14px $(main.font.family)" value="italic 400 14px $(family)"/>
-    <Variable name="mainfont.medium" description="Main Font Medium" type="font" default="normal 500 14px $(main.font.family)" value="normal 500 14px $(family)"/>
-    <Variable name="mainfont.mediumitalic" description="Main Font Medium Italic" type="font" default="italic 500 14px $(main.font.family)" value="italic 500 14px $(family)"/>
-    <Variable name="mainfont.bold" description="Main Font Bold" type="font" default="normal 700 14px $(main.font.family)" value="normal 700 14px $(family)"/>
-    <Variable name="mainfont.bolditalic" description="Main Font Bold Italic" type="font" default="italic 700 14px $(main.font.family)" value="italic 700 14px $(family)"/>
-    <!-- Menu Font -->
-    <Variable name="menufont.italic" description="Menu Font Italic" type="font" default="italic 400 14px $(menu.font.family)" value="italic 400 14px $(family)"/>
-    <Variable name="menufont.sb" description="Menu Font SemiBold" type="font" default="normal 600 14px $(menu.font.family)" value="normal 600 14px $(family)"/>
-    <Variable name="menufont.sbitalic" description="Menu Font SemiBold Italic" type="font" default="italic 600 14px $(menu.font.family)" value="italic 600 14px $(family)"/>
-    <Variable name="menufont.bold" description="Menu Font Bold" type="font" default="normal 700 14px $(menu.font.family)" value="normal 700 14px $(family)"/>
-    <Variable name="menufont.bolditalic" description="Menu Font Bold Italic" type="font" default="italic 700 14px $(menu.font.family)" value="italic 700 14px $(family)"/>
-    <!-- Title Font -->
-    <Variable name="titlefont.italic" description="Title Font Italic" type="font" default="italic 400 14px $(title.font.family)" value="italic 400 14px $(family)"/>
-    <Variable name="titlefont.sb" description="Title Font SemiBold" type="font" default="normal 600 14px $(title.font.family)" value="normal 600 14px $(family)"/>
-    <Variable name="titlefont.sbitalic" description="Title Font SemiBold Italic" type="font" default="italic 600 14px $(title.font.family)" value="italic 600 14px $(family)"/>
-    <Variable name="titlefont.bold" description="Title Font Bold" type="font" default="normal 700 14px $(title.font.family)" value="normal 700 14px $(family)"/>
-    <Variable name="titlefont.bolditalic" description="Title Font Bold Italic" type="font" default="italic 700 14px $(title.font.family)" value="italic 700 14px $(family)"/>
-    <!-- Text Font -->
-    <Variable name="textfont.italic" description="Text Font Italic" type="font" default="italic 400 14px $(text.font.family)" value="italic 400 14px $(family)"/>
-    <Variable name="textfont.medium" description="Text Font Medium" type="font" default="normal 500 14px $(text.font.family)" value="normal 500 14px $(family)"/>
-    <Variable name="textfont.mediumitalic" description="Text Font Medium Italic" type="font" default="italic 500 14px $(text.font.family)" value="italic 500 14px $(family)"/>
-    <Variable name="textfont.bold" description="Text Font Bold" type="font" default="normal 700 14px $(text.font.family)" value="normal 700 14px $(family)"/>
-    <Variable name="textfont.bolditalic" description="Text Font Bold Italic" type="font" default="italic 700 14px $(text.font.family)" value="italic 700 14px $(family)"/>
-</Group>
-<Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="transparent"  value="transparent"/>
-<Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="'#111111'" value="#111111"/>
-<Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="'#111111'"  value="#111111"/>
-<Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="'#1E73BE'"  value="#1E73BE"/>
-<Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 15px raleway, Arial, sans-serif !important"  value="normal 400 15px raleway, Arial, sans-serif !important"/>
-<Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 15px raleway, Arial, sans-serif !important"  value="normal 700 15px raleway, Arial, sans-serif !important"/>
--- Customize Options (End) --*/
-
-/*-- Google Fonts --*/
-@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-
-/*-- Material Icons Font --*/
-@font-face{font-family:"Material Icons Round";font-display:swap;font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialiconsround/v65/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2) format("woff2")}.mir{font-family:"Material Icons Round";font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:liga;-webkit-font-smoothing:antialiased}
-
-/*-- Font Awesome 5 Brands 5.15.3 --*/
-@font-face{font-family:"Font Awesome 5 Brands";font-display:swap;font-style:normal;font-weight:400;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.svg#fontawesome) format("svg")}.fab{font-family:"Font Awesome 5 Brands";font-weight:400}
-
 /*-- CSS Variables --*/
 :root{
 --body-font:'Raleway', Arial, sans-serif;
 --menu-font:'Raleway', Arial, sans-serif;
 --title-font:'Raleway', Arial, sans-serif;
 --text-font:'Raleway', Arial, sans-serif;
---body-bg-color:'#FAFAFA';
---body-bg:'#FAFAFA';
---outer-bg:'#FAFAFA';
---main-color:'#1E73BE';
---title-color:'#111111';
---title-hover-color:'#1E73BE';
---meta-color:'#595959';
---text-color:'#111111';
---header-bg:'#FFFFFF';
---header-color:'#111111';
---header-hover-color:'#111111';
---submenu-bg:'#FFFFFF';
---submenu-color:'#111111';
---submenu-hover-color:'#1E73BE';
---megamenu-bg:'#FFFFFF';
---megamenu-color:'#111111';
---megamenu-hover-color:'#1E73BE';
---megamenu-meta-color:'#898989';
---mobilemenu-bg:'#FAFAFA';
---mobilemenu-header-bg:'#FAFAFA';
---mobilemenu-color:'#111111';
---mobilemenu-hover-color:'#1E73BE';
---widget-bg:'#FFFFFF';
---footer-bg:'#FFFFFF';
---footer-color:'#111111';
---footer-hover-color:'#1E73BE';
---footerbar-bg:'#111111';
---footerbar-color:'#FFFFFF';
---footerbar-hover-color:'#1E73BE';
---button-bg:'#1E73BE';
---button-color:'#FFFFFF';
---button-hover-bg:'#1B67AB';
---button-hover-color:'#FFFFFF';
+--body-bg-color:#FAFAFA;
+--body-bg:#FAFAFA;
+--outer-bg:#FAFAFA;
+--main-color:#1E73BE;
+--title-color:#111111;
+--title-hover-color:#1E73BE;
+--meta-color:#595959;
+--text-color:#111111;
+--header-bg:'#FFFFFF;
+--header-color:#111111';
+--header-hover-color:#111111;
+--submenu-bg:#FFFFFF;
+--submenu-color:#111111;
+--submenu-hover-color:#1E73BE;
+--megamenu-bg:#FFFFFF;
+--megamenu-color:#111111;
+--megamenu-hover-color:#1E73BE;
+--megamenu-meta-color:#898989;
+--mobilemenu-bg:#FAFAFA;
+--mobilemenu-header-bg:#FAFAFA;
+--mobilemenu-color:#111111;
+--mobilemenu-hover-color:#1E73BE;
+--widget-bg:#FFFFFF;
+--footer-bg:#FFFFFF;
+--footer-color:#111111;
+--footer-hover-color:#1E73BE;
+--footerbar-bg:#111111;
+--footerbar-color:#FFFFFF;
+--footerbar-hover-color:#1E73BE;
+--button-bg:#1E73BE;
+--button-color:#FFFFFF;
+--button-hover-bg:#1B67AB;
+--button-hover-color:#FFFFFF;
 --gray-bg:rgba(155,155,155,0.05);
 --avatar-shadow:0px 1px 4px rgba(0,0,0,0.05);
---field-focus:0 0 0 2px '#1E73BE'20;
---btn-focus:0 0 0 2px '#1E73BE'20;
+--field-focus:0 0 0 2px #1E73BE 20;
+--btn-focus:0 0 0 2px #1E73BE 20;
 --border-color:rgba(155,155,155,0.15);
 --radius:4px;
 --shadow:0 0 10px rgba(0,0,0,0.03);
